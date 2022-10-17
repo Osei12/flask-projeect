@@ -1,0 +1,51 @@
+<nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{url_for('home')}}"><svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M384 768C171.912 768 0 596.088 0 384C0 171.912 171.912 0 384 0C596.088 0 768 171.912 768 384C768 596.088 596.088 768 384 768ZM474.12 416.016C528.024 331.56 570 192 570 192L480.12 212.376L447.216 328.776C444.12 241.512 384.288 209.568 384.288 209.568C336.36 186.216 293.64 196.488 262.848 212.544C224.736 232.368 197.016 266.928 183.744 306.72C164.88 363.336 167.184 426.864 169.68 455.616C170.688 469.104 173.664 482.376 178.56 495.048C211.632 580.8 303.24 575.928 303.24 575.928C387.168 572.952 438.168 474.12 438.168 474.12L462.216 546.792C483.768 583.248 531.504 569.592 541.32 567.552C543.048 567.168 544.584 566.976 546.336 566.592L600 558.408V535.056C483.168 538.224 474.12 416.04 474.12 416.04V416.016ZM360.384 503.832C353.157 511.239 344.046 516.533 334.032 519.144C312.264 524.568 295.536 515.424 283.992 504.216C271.095 491.192 262.264 474.698 258.576 456.744C237.408 336.984 266.664 284.496 286.104 260.376C291.399 253.615 298.225 248.208 306.02 244.603C313.815 240.998 322.355 239.297 330.936 239.64C406.392 243.576 423.336 401.448 423.336 401.448C401.976 457.488 374.448 490.008 360.384 503.832V503.832Z" fill="#FF9A62"/>
+        </svg>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-center me-auto mb-2 mb-lg-0">
+          <li class="nav-item ">
+            <a class="nav-link" aria-current="page" href="{{url_for('home')}}">Home</a>
+          </li>
+        
+          
+          {% if current_user.is_authenticated %}
+          <li class="nav-item">
+                <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('dashboard')}}">Dashboard</a>
+            </li>
+          {% else %}
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('login')}}">Login</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="{{url_for('register')}}">Register</a>
+            </li>
+          {% endif %}
+            
+         
+            
+       
+                
+            
+        
+    
+      
+
+   
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>

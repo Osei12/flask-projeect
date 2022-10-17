@@ -1,0 +1,16 @@
+svg{
+    width: 35px;
+    height: 35px;
+}
+
+.container{
+    overflow: auto;
+}
+
+.fas{
+    background-color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+}

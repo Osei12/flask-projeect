@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Dashboard
+{% endblock title %}
+    
+
+
+{% block content %}
+<div class="container">
+    <h1>Dashboard</h1>
+
+    <strong>User Id :{{current_user.id}}</strong> <br>
+    <strong>Name: {{current_user.name}}</strong><br>
+    <strong>Email: {{current_user.email}}</strong><br>
+    <strong>password: {{current_user.password}}</strong><br>
+    <strong>Date Joined: {{current_user.date_created}}</strong><br>
+    
+    <a href="{{url_for('logout')}}" class="btn btn-danger">Logout</a>
+</div>
+{% endblock content %}
+    
