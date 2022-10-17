@@ -18,10 +18,10 @@ migrate = Migrate()
 
 
 
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://nmdbwmdfjwyqko:2e08fea48a3e3f12ad9846642933bcf617fea36cc937abdf5d7e28d971e3310b@ec2-3-220-207-90.compute-1.amazonaws.com:5432/d8mnseq4m59rke'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-# app.config['SQLALCHEMY_DATABASE_URI'] = ' postgres://inuiaxhpzowhiz:b404792220e8840eebe9ba6d2372be55f276e56d7974313d07364b8a2cdbbe4b@ec2-52-23-131-232.compute-1.amazonaws.com:5432/dc2cpklhbs4u4i'
+
 # app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:dev123@localhost/mydb'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://gsvxyfrpfrqjjv:d304b0e6c3631b0688d36a7d1ae09ff27c8421a181efc3227afa531365c739ad@ec2-44-208-88-195.compute-1.amazonaws.com:5432/d47q469f50cdfo'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'JSHHSJHKjhjkhjk7t57765@@567!?'
 
